@@ -5,6 +5,11 @@ import Spinner from '../layout/Spinner';
 
 class Users extends Component {
 
+    static defaultProps = {
+        isLoading: false,
+        users: []
+    };
+
     static propTypes = {
         isLoading: PropTypes.bool.isRequired,
         users: PropTypes.array.isRequired,
